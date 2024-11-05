@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import Dashboard from "./scenes/dashboard/index.jsx";
 import { ThemeProvider } from '@mui/material/styles';
 import Pie from "./scenes/pie/index.jsx";
-import Team from "./scenes/team/team.jsx";
-import Contacts from "./scenes/contacts/index.jsx";
+// import Contacts from "./scenes/contacts/index.jsx";
 import Invoices from "./scenes/invoices/index.jsx";
 import Form from "./scenes/form/index.jsx";
 import Bar from "./scenes/bar/index.jsx";
@@ -17,6 +16,8 @@ import {ColorModeContext, useMode} from "./theme.js";
 import GeographyChart from "./components/GeographyChart.jsx";
 import Calender from "./scenes/calender/Calender.jsx";
 import Geography from "./scenes/geography/index.jsx";
+import Team from "./scenes/team/team.jsx";
+import Contacts from "./scenes/contacts/index.jsx";
 
 const App = () => {
     const [theme, colorMode] = useMode();
@@ -31,7 +32,7 @@ const App = () => {
                         <TopBar isSidebar={isSidebar}/>
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
-                            <Route path="/team" element={<Team />} />
+                            <Route path="/team" element={<Team/>} />
                             <Route path="/contacts" element={<Contacts />} />
                             <Route path="/invoices" element={<Invoices />} />
                             <Route path="/form" element={<Form />} />
