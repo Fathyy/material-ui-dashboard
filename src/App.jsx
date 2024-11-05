@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import {ColorModeContext, useMode} from "./theme.js";
-import {ThemeProvider} from "@nivo/core";
 import Dashboard from "./scenes/dashboard/index.jsx";
+import { ThemeProvider } from '@mui/material/styles';
 import Pie from "./scenes/pie/index.jsx";
 import Team from "./scenes/team/team.jsx";
 import Contacts from "./scenes/contacts/index.jsx";
@@ -14,9 +13,13 @@ import FAQ from "./scenes/faq/index.jsx";
  import Sidebar from "./scenes/global/Sidebar.jsx";
 import {CssBaseline} from "@mui/material";
 import TopBar from "./scenes/global/Topbar.jsx";
+import {ColorModeContext, useMode} from "./theme.js";
+import GeographyChart from "./components/GeographyChart.jsx";
+import Calender from "./scenes/calender/Calender.jsx";
+import Geography from "./scenes/geography/index.jsx";
 
 const App = () => {
-    const { theme, colorMode } = useMode();
+    const [theme, colorMode] = useMode();
     const [isSidebar, setIsSidebar] = useState(true);
     return (
         <ColorModeContext.Provider value={colorMode}>
@@ -37,8 +40,8 @@ const App = () => {
                             <Route path="/pie" element={<Pie />} />
                             <Route path="/line" element={<Line />} />
                             <Route path="/faq" element={<FAQ />} />
-                            {/*<Route path="/calendar" element={<Calender />} />*/}
-                            {/*<Route path="/geography" element={<Geography />} />*/}
+                            <Route path="/calendar" element={<Calender />} />
+                            <Route path="/geography" element={<Geography />} />
                         </Routes>
                     </main>
                 </div>

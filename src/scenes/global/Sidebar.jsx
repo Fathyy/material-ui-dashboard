@@ -14,7 +14,9 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import {Box, IconButton, Typography, useTheme} from "@mui/material";
 import {tokens} from "../../theme.js";
+import "react-pro-sidebar/dist/css/styles.css";
 import {Menu, MenuItem, ProSidebar} from "react-pro-sidebar";
+import userImage from "../../assets/user.png";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
@@ -78,7 +80,7 @@ const Sidebar = () => {
                                 ml="15px"
                             >
                                 <Typography variant="h3" color={colors.grey[100]}>
-                                    ADMINIS
+                                    ADMIN
                                 </Typography>
                                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                                     <MenuOutlinedIcon />
@@ -94,7 +96,7 @@ const Sidebar = () => {
                                     alt="profile-user"
                                     width="100px"
                                     height="100px"
-                                    src={`../../assets/user.png`}
+                                    src={userImage}
                                     style={{ cursor: "pointer", borderRadius: "50%" }}
                                 />
                             </Box>
