@@ -6,7 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function FAQ(props) {
     const theme = useTheme();
-    const colors = tokens();
+    const colors = tokens(theme.palette.mode);
     return (
         <Box m="20px">
             <Header title="FAQ" subtitle="Frequently Asked Questions Page" />

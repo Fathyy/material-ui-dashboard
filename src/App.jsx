@@ -18,6 +18,7 @@ import Calender from "./scenes/calender/Calender.jsx";
 import Geography from "./scenes/geography/index.jsx";
 import Team from "./scenes/team/team.jsx";
 import Contacts from "./scenes/contacts/index.jsx";
+import Profile from "./scenes/profile/Profile.jsx";
 
 const App = () => {
     const [theme, colorMode] = useMode();
@@ -36,7 +37,7 @@ const App = () => {
                             <Route path="/contacts" element={<Contacts />} />
                             <Route path="/invoices" element={<Invoices />} />
                             <Route path="/form" element={<Form />} />
-
+                            <Route path="/profile" element={<Profile />} />
                             <Route path="/bar" element={<Bar />} />
                             <Route path="/pie" element={<Pie />} />
                             <Route path="/line" element={<Line />} />

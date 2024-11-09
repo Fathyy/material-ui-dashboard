@@ -16,7 +16,7 @@ import {Box, IconButton, Typography, useTheme} from "@mui/material";
 import {tokens} from "../../theme.js";
 import "react-pro-sidebar/dist/css/styles.css";
 import {Menu, MenuItem, ProSidebar} from "react-pro-sidebar";
-import userImage from "../../assets/user.png";
+import userImage from "../../assets/userPic2.jpg";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
@@ -107,10 +107,10 @@ const Sidebar = () => {
                                     fontWeight="bold"
                                     sx={{ m: "10px 0 0 0" }}
                                 >
-                                    Ed Roh
+                                    Fathi
                                 </Typography>
                                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                                    VP Fancy Admin
+                                    New Admin
                                 </Typography>
                             </Box>
                         </Box>

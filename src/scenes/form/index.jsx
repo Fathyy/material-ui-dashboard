@@ -12,7 +12,7 @@ function Form(props) {
         console.log(values);
     }
     return (
-        <Box>
+        <Box m="20px">
             <Header title="Create user" subtitle="Create a new user profile"/>
             <Formik
                 onSubmit={handleFormSubmit}

@@ -7,7 +7,7 @@ import {DataGrid, GridToolbar} from "@mui/x-data-grid";
 
 function Contacts(props) {
     const theme = useTheme();
-    const colors = tokens();
+    const colors = tokens(theme.palette.mode);
 
     const columns = [
         { field: "id", headerName: "ID", flex: 0.5 },
